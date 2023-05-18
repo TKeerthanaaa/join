@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Karla:wght@400;700&display=swap');
+
+:root{
+    --clr-Cyan: hsl(179, 62%, 43%);
+    --clr-Bright Yellow: hsl(71, 73%, 54%);
+    --clr-Light Gray: hsl(204, 43%, 93%);
+    --clr-Grayish Blue: hsl(218, 22%, 67%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width:39rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'one one'
+    'two three';
+}
+.card-one{
+    grid-area:one;
+}
+.card-two{
+    grid-area:two;
+}
+.card-three{
+    grid-area: three;
+}
+
+.card-one{
+    background-color:white;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+}
+.card-one h1{
+    margin: 1rem 1rem 0rem 1rem;
+    font-size: 1em;
+    font-weight: 700;
+    color:var(--clr-Cyan);
+}
+.card-one h2{
+    font-size: 0.8em;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+    margin: 1rem 1rem;
+}
+.card-one p{
+    font-size: 0.7em;
+    color: hsl(218, 22%, 67%);
+    margin: 1rem 15rem 1rem 1rem;
+}
+
+.card-two{
+    background-color:hsl(179, 62%, 43%);
+    margin-top: -0.1rem;
+    border-bottom-left-radius: 0.6rem;
+    }
+.card-two h2{
+    font-size: 0.7em;
+    margin: 1rem 1rem 1rem 1rem;
+    color: white;
+    }
+
+.card-two h3{
+    font-size: 1.3em;
+    margin: 1rem 1rem 1rem 1rem;
+    color: white;
+}
+.card-two h3 span{
+    font-size: 0.5em;
+    color: hsl(179, 73%, 70%);
+    margin-left: 0.8rem;
+    text-align: center;
+}
+
+.card-two p{
+    font-size: 0.6em;
+    color: rgb(223, 221, 232);
+    margin-left: 1rem;
+    margin-top:-0.8rem;
+}
+
+.card-two button{
+    position: relative;
+    background-color: hsl(71, 73%, 54%);
+    text-align: center;
+    border: 2px solid hsl(71, 73%, 54%);
+    padding: 0.3rem 2.8rem;
+    color: white;
+    border-radius: 0.1rem;
+    font-size: 0.6em;
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+.card-three li{
+    list-style: none;
+}
+
+.card-three{
+    background-color: hsl(179, 39%, 52%);
+    padding-bottom: 0.4rem;
+    margin-top: -0.1rem;
+    border-bottom-right-radius: 0.6rem;
+}
+
+.card-three h2{
+    color: white;
+    font-size: 0.7em;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.card-three li{
+    color:rgb(234, 233, 239);
+    font-size: 0.5em;
+    margin-left: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+
+
+
+
+
+
